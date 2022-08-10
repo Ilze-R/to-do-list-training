@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+html body {
+  min-height: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem;
+  background: #e9ecef;
+}
+.container .top-wrapper {
+  padding: 5rem;
+  width: 100%;
+  max-width: 40rem;
+  border-radius: 15px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  background: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5rem;
+}
+.container .top-wrapper .top-add {
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  align-content: center;
+}
+.container .top-wrapper .top-add h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #080708;
+  text-transform: uppercase;
+  align-self: center;
+}
+.container .top-wrapper .top-add button {
+  padding: 1rem 2.3rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #3772ff;
+  color: #e6e8e6;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+  align-self: center;
+}
+.container .top-wrapper .input {
+  align-self: center;
+}
+.container .top-wrapper .input input {
+  padding: 2rem;
+  font-family: "Lato", sans-serif;
+  border-radius: 0.5rem;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border: none;
+}
+.container .top-wrapper .tododisplay {
+  border: solid 1px black;
+  display: flex;
+  padding: 2rem;
+}
+.container .top-wrapper .tododisplay p {
+  font-size: 500;
+}
+
+.item {
+  display: flex;
+}
+
+.hide {
+  display: none;
+}/*# sourceMappingURL=style.css.map */
