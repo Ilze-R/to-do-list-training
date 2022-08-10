@@ -32,13 +32,20 @@ function addToLocalStorage(todos) {
   localStorage.setItem("todos", JSON.stringify(todos));
   renderTodos(todos);
 }
+
 function renderTodos(todos) {
-  var list = document.createElement("div");
-  todos.forEach(function (todo) {
-    p = document.createElement("p");
-    p.classList.add("item");
-    tododisplay.append(p);
-    tododisplay.classList.remove("hide");
-    p.innerHTML = todos.value;
-  });
+  const result = document.querySelector(".result");
+
+  const div = document.createElement("div");
+  div.setAttribute("class", "todo-list-wrapper");
+  result.append(div);
+  const ul = document.createElement("ul");
+  div.append(ul);
+  const li = document.createElement("li");
+  ul.append(li);
+  var innerhtml = "";
+  for (var i = 0; i < todos.length; i++) {
+    innerhtml = todos[i].name;
+    li.innerHTML = innerhtml;
+  }
 }

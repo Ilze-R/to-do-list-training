@@ -38,6 +38,7 @@ html {
         color: #080708;
         text-transform: uppercase;
         align-self: center;
+        letter-spacing: 0.8px;
       }
       button {
         padding: 1rem 2.3rem;
@@ -46,6 +47,7 @@ html {
         text-transform: uppercase;
         background-color: #3772ff;
         color: #e6e8e6;
+        letter-spacing: 0.8px;
         border: none;
         cursor: pointer;
         border-radius: 15px;
@@ -57,25 +59,37 @@ html {
       input {
         padding: 2rem;
         font-family: $font;
+        color: #080708;
+        letter-spacing: 0.8px;
         border-radius: 0.5rem;
         box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
           rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
         border: none;
       }
     }
-    .tododisplay {
-      border: solid 1px black;
-      display: flex;
-      padding: 2rem;
-      p {
-        font-size: 500;
-      }
-    }
   }
 }
-.item {
+
+.result {
   display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
+
+.todo-list-wrapper {
+  display: flex;
+  border: solid 1px #3772ff;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+li {
+  list-style: none;
+  font-family: $font;
+  letter-spacing: 0.8px;
+  color: #080708;
+}
+
 .hide {
   display: none;
 }
