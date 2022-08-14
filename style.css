@@ -38,7 +38,7 @@ html body {
 }
 .container .top-wrapper .top-add h1 {
   font-family: "Lato", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   color: #080708;
   text-transform: uppercase;
   align-self: center;
@@ -77,17 +77,42 @@ html body {
 }
 
 .todo-list-wrapper {
-  display: flex;
+  display: inline-block;
   border: solid 1px #3772ff;
   padding: 0.5rem;
   border-radius: 0.5rem;
 }
 
-li {
+.checkbox {
   list-style: none;
+  justify-content: center;
+  text-align: center;
+}
+
+p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
   font-family: "Lato", sans-serif;
   letter-spacing: 0.8px;
   color: #080708;
+}
+
+.delete {
+  justify-items: center;
+  align-content: center;
+  left: 26rem;
+  padding: 0.07rem 0.25rem 0.07rem 0.25rem;
+  background: #fdca40;
+  border: none;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.7rem;
 }
 
 .hide {
